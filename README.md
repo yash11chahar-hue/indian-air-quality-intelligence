@@ -46,3 +46,18 @@ Future Improvements
 Project Status
 
 In progress — developed as a learning project for Data Science and AI.
+Model Performance
+
+Two regression approaches were evaluated for predicting benzene concentration (C6H6(GT)) from the PT08.S2(NMHC) sensor response.
+
+Model	Test MAE	Test R²
+Linear Regression	1.125	0.947
+Polynomial Regression (Degree 2)	0.06166	0.99979
+
+Results
+
+Polynomial Regression achieved substantially lower prediction error and a higher R² score than the linear baseline on the chronological test split.
+
+Limitations
+
+These results reflect performance on the available dataset. Further validation across different time periods and independent data is needed before claiming reliable real-world predictive performance.
